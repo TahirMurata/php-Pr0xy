@@ -15,7 +15,7 @@ php-Pr0xy is a simple web proxy written in PHP that can allow you to bypass Inte
 ## Installation
 
 ### Website
-Just enter the website and login. The password is `proxybypass10`.
+Just enter the website and enter the URL that you want to access. You can also use different types of bypassers such as amazon, sci-hub etc.
 
 ### Manual
 Simply copy everything in `src` to your web server and access it directly. That's it!
@@ -28,11 +28,9 @@ Simply copy everything in `src` to your web server and access it directly. That'
 
 - High security to protect the user.
 
-  - Block access unless POST is send
+  - Cannot look at what you searched thanks to POST.
 	
-  - Disguise the `<title>` tag to UwU
-	
-  - Password protect
+  - Disguise the `<title>` tag to UwU.
 	
   - etc...
 
@@ -40,7 +38,7 @@ php-Pr0xy doesn't require any configuration out of the box, but configuration op
 
 ## Known Limitations
 
-miniProxy has several known limitations. Some of them may be fixed in future releases. For now, they include:
+php-Pr0xy has several known limitations. Some of them may be fixed in future releases. For now, they include:
 
 * some `<a>` tags are not supported
 * No cookie support
