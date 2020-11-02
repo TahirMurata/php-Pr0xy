@@ -28,9 +28,11 @@ Simply copy everything in `src` to your web server and access it directly. That'
 
 - High security to protect the user.
 
-  - Cannot look at what you searched thanks to POST.
+  - Cannot look at what you searched thanks to POST method.
 	
   - Disguise the `<title>` tag to UwU.
+  
+  - Disguise the favicon.
 	
   - etc...
 
