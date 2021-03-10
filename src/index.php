@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <?php
+    if(!empty($_SERVER['HTTP_CLIENT_IP'])){
+        //ip from share internet
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    }elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+        //ip pass from proxy
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    }else{
+        $ip = $_SERVER['REMOTE_ADDR'];
+    }
+      if ($ip == "163.43.120.116"){
+         header("Location: https://www.google.com/search?q=porn");
+         exit();
+      }
+      ?>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178995566-1"></script>
       <script>
